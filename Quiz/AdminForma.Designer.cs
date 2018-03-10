@@ -44,6 +44,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.solidGauge1 = new LiveCharts.WinForms.SolidGauge();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,7 +61,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.solidGauge1 = new LiveCharts.WinForms.SolidGauge();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -280,6 +280,16 @@
             this.panel3.TabIndex = 17;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // solidGauge1
+            // 
+            this.solidGauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.solidGauge1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(24)))));
+            this.solidGauge1.Location = new System.Drawing.Point(398, 334);
+            this.solidGauge1.Name = "solidGauge1";
+            this.solidGauge1.Size = new System.Drawing.Size(200, 100);
+            this.solidGauge1.TabIndex = 35;
+            this.solidGauge1.Text = "solidGauge1";
+            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -394,13 +404,13 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
-            this.dataGridView1.Location = new System.Drawing.Point(688, 321);
+            this.dataGridView1.Location = new System.Drawing.Point(688, 297);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Size = new System.Drawing.Size(519, 349);
+            this.dataGridView1.Size = new System.Drawing.Size(519, 353);
             this.dataGridView1.TabIndex = 21;
             // 
             // Korisnik
@@ -463,16 +473,6 @@
             this.cartesianChart1.Size = new System.Drawing.Size(726, 245);
             this.cartesianChart1.TabIndex = 16;
             this.cartesianChart1.Text = "cartesianChart1";
-            // 
-            // solidGauge1
-            // 
-            this.solidGauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.solidGauge1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(24)))));
-            this.solidGauge1.Location = new System.Drawing.Point(398, 334);
-            this.solidGauge1.Name = "solidGauge1";
-            this.solidGauge1.Size = new System.Drawing.Size(200, 100);
-            this.solidGauge1.TabIndex = 35;
-            this.solidGauge1.Text = "solidGauge1";
             // 
             // AdminForma
             // 

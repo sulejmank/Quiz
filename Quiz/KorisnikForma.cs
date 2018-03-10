@@ -102,7 +102,7 @@ namespace Quiz
             if (kviz.lista[brP].tacan == "B" && kviz.lista.Count >= brP + 1)
             {
 
-                kviz.poeni += 10;
+                kviz.poeni += 20;
 
                 if (kviz.lista.Count > kviz.brPitanja)
                 {
@@ -213,7 +213,7 @@ namespace Quiz
             if (kviz.lista[brP].tacan == "A" && kviz.lista.Count >= brP+1)
             {
 
-                kviz.poeni += 10;
+                kviz.poeni += 20;
 
                 if (kviz.lista.Count > kviz.brPitanja)
                 {

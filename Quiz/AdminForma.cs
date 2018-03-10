@@ -121,8 +121,6 @@ namespace Quiz
 
             foreach (Korisnik k in lista)
             {
-                if (k.Uloga == "Korisnik")
-                {
                     cartesianChart1.Series.Add(
                     new LineSeries
                     {
@@ -131,10 +129,8 @@ namespace Quiz
                         PointGeometry = DefaultGeometries.Square,
                         PointGeometrySize = 15
                     });
-                }
 
             }
-
 
             cartesianChart1.AxisX.Add(new LiveCharts.Wpf.Axis
             {
@@ -238,7 +234,10 @@ namespace Quiz
             this.Hide();
             KorisnikForma form = new KorisnikForma();
             form.korisnik = korisnik;
+            form.WindowState = FormWindowState.Maximized;
             form.ShowDialog();
+            grafovi(kviz, moj, asoc, igre);
+
             this.Show();
         }
 
@@ -261,7 +260,6 @@ namespace Quiz
         {
             dodajAdmina dod = new dodajAdmina();
             dod.ShowDialog();
-
         }
 
         private void button7_Click(object sender, EventArgs e)
